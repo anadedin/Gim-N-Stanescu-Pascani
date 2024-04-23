@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Onest:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: Onest;
+}
+
+body {
+    margin: 0px;  /*lipeste body de pagina*/
+}
+
+.header-logo {
+    height: 50px;
+    border-radius: 50px; /*optional*/
+}
+
+header {
+    background-color: #8686869a;
+    padding: 8px 50px 5px 50px;
+    
+    position: fixed; /*pozitie fixata*/
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 3; /*poate urca elementele unul peste altul*/
+
+    backdrop-filter: blur(5px);
+}
+nav {
+    float: right;
+    padding-top: 8px; /*distanta de sus*/
+}
+
+nav a {
+    font-size: 130%;
+    text-transform: uppercase; /*toate literele sa fie mari*/
+    color: white;
+    margin-left:15px; /*textul din Nav sa fie cu spatiu intre ele*/
+    font-family:Kanit; /*pentru antet fontul*/
+}
+
+a {
+    text-decoration: none; /*toate linkurile sa nu aiba liniile de jos*/
+}
+
+h1 {
+    font-family: Kanit;
+    font-weight: 800;  /*greutatea fontului de la 100-900 */
+    font-size:200%;
+}
+
+h2 {
+    font-weight: 300; /*grutatea h2 cu 300*/
+}
+
+section {
+    padding: 50px 15% 25px 15%;
+    position: relative;
+}
+
+p {
+    line-height: 140%;/*distanta dintre rinduri sa fie mai citibil*/
+}
+
+#intro{
+    min-height: max(100dvh, 650px); /*dispozitive mobile*/
+    background: linear-gradient(#4141413f, #4141413f), url("../images/index.jpg");/*deasupra ca pelicula */ /*imaginea de fundal  url linkul de la imagine din scoala */
+    background-size: cover;/*as acopere imaginea respectiva*/
+    position:relative; /*parintele R cu A sa ascuns navigarea*/
+    
+}
+
+
+.logo {
+    height: 100px; /*inaltimea imaginii*/
+    border-radius: 50%  /* va fi cerc*/
+}
+
+.intro-content {
+    position: absolute; /*un element peste altul*/
+    left: 8%; /*de la stinga*/
+    top: 20%; /*de sus*/
+    color: white; 
+}
+
+
+.intro-content h1{
+    font-size: 250%; /*marim fontul de 2.5 ori*/
+
+    margin-top: 0px; /* sa fie mai aproape de logoul*/
+    margin-bottom: -15px; /*logoul mai aproape de scris*/
+}
+
+.intro-btn{
+    color:white;
+    font-size: 110%;
+    background: #ffffff50;
+    padding: 12px;
+    border: 2px solid #ffffff99;
+    border-radius: 5px;
+
+    margin-top: 5px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.intro-btn:hover {
+    opacity: 80%; 
+}
+
+#despre-btn{
+    background-color: #66f05a7d;
+}
+
+.centered {
+    text-align: center; 
+    
+}
+
+.p-despre {        
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;      /* adaugam o umbra pentru acest div box shadow*/
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: justify;
+
+    background-color: white;
+}
+
+.custom-shape-divider-bottom-1709460498 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1709460498 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-bottom-1709460498 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.slideshow {
+    height: max(60dvh, 250px);
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.slide-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px; 
+    color: white;
+    text-align: center; 
+    
+   
+    background-color: #000000aa; 
+    
+    display: flex;
+  flex-direction: column;
+    
+  align-items: center;
+  justify-content: center;
+    
+}
+.slide-text p {
+    padding: 5px 10%;
+}
+
+.slide-text i {
+    font-size: 250%;
+}
+
+section > i {
+    font-size: 34px;
+    position: absolute;
+    z-index: -1;
+}
+.i1 {
+    top: 6% ;
+    left: 13%; 
+    animation: icon-anim 3s infinite;
+}
+.i2 {
+    bottom: 1%;
+    left: 25%; 
+    animation: icon-anim 2.5s infinite;
+}
+.i3 {
+    bottom: 28%;
+    left: 10%; 
+    animation: icon-anim 4s 1.5s infinite;
+}
+.i4 {
+    bottom: 36%;
+    right: 8%; 
+    animation: icon-anim 2.2s 0.3s infinite;
+}
+
+.i5 {
+    top: 26%; 
+    right: 6%;
+    animation: icon-anim 2.7s 1s infinite;
+}
+.i6 {
+    top: 5%;
+    right: 16%;
+    animation: icon-anim 3s 0.7s infinite;
+}
+
+.i7 {
+    bottom: 7%;
+    left: 5%; 
+    animation: icon-anim 3.5s 0.2s infinite;
+}
+
+.i8 {
+    left: 5%;
+    top: 40%;
+    animation: icon-anim 3s  1.2s infinite;
+}
+
+.i9 {
+    bottom: 2%;
+    right: 11%;
+    animation: icon-anim 2.1s 0.2s infinite;
+}
+
+@keyframes icon-anim {
+    0% { transform: scale(1) rotate(0deg); }
+    40% { transform: scale(1.15) rotate(30deg); }
+    70% { transform: rotate(-30deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+.galerie-container {
+    display: flex;
+    flex-wrap: wrap;/*sa treaca din rind nou imaginile daca nu incap*/
+    gap: 15px;
+    justify-content: center;  /*doar acestea 3 */
+}
+
+.galerie-container img{
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+.galerie-container img:hover { /* tranzitia la imagini*/
+    transform: scale(1.05);
+}
+
+.row {
+     overflow: auto;
+}
+
+.col-50 {
+    float: left; /*aliniaza la stinga*/
+    width: 50%;  /*latimea 50% */
+}
+
+.harta {
+    width: 100%;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.contacte-info a{
+    color: black;
+}
+
+.formular-container {
+    background-color: #ffffff55;
+
+    padding: 2px 10px 20px 10px;
+    text-align: center;
+    margin-top: 15px;
+    max-width: 500px;
+
+    margin-right: 35px;
+    border-radius: 10px;
+}
+
+.formular-container input, .formular-container textarea {
+    width: 80%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding: 5px;
+    font-family: inherit; 
+    font-size: 15px;
+
+    resize: none;
+}
+
+#contacte {
+    background:linear-gradient(white, #4c6b76b4);
+}
+footer {
+    text-align: center;
+    background-color:#4c6b76b4;
+    color:white;
+    padding: 15px;
+
+}
+
+#hamburger {
+    color: White;
+    font-size: 170%;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;   /*se schimba cursorul*/
+    display: none; /*iconita ascunsa*/
+}
+
+
+.orar-imagini a {
+   position: relative;
+   height: 220px;
+   width: 220px;
+                      
+   display: block;
+}
+
+.orar-text {
+    position: absolute;
+    color: white;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.orar-imagini {
+    border-top: 2px solid lightgray;
+    margin-top: 10px;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    gap: 15px;/*distanta minima intre elemente*/
+}
+
+.orar-imagini img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    text-align: center;
+}
+
+.orar-detalii {
+    border: 2px solid lightgray;
+    padding: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orar-detalii summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.noutate {                    /*pagina noutate tabel gri*/
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 0px 15px 10px 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    max-width: 1000px;        /*imaginea din pagina noutate setarile*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+}
+
+.noutate {
+    font-size: 90%;
+}
+
+.noutate img {                     /*aranjarea imaginii cu iepuras*/
+    max-height: 250px;
+    border-radius: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.noutate-data {
+    text-align: right;
+    font-size: 70%;
+    position: relative;
+    top: 10px;
+}
+@media (max-width: 1200px) {
+    .galerie-container img {
+        width: 270px;
+        height: 210px;
+    }
+}
+
+@media (max-width: 800px) {/*setarile pentru ecrane mai mici de 8oopx*/
+
+        html {
+            font-size: 16px;
+        }
+
+        .intro-content h1 {
+            font-size: 200%;
+        }
+
+
+        section {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .galerie-container img {
+            width: 160px;
+            height: 140px;
+        }
+
+
+        .col-50{
+            width: 100%;
+        }
+
+        .formular-container {
+            width: 100%;
+            max-width: none;
+            margin-bottom: 15px;
+        }
+
+        header {
+            padding-left: 15px;
+        }
+
+        nav a {
+            display: none; /*ascundem*/
+        }
+
+        #hamburger {
+            display: block;
+        }
+
+        nav.mobile a {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        nav.mobile {
+            float:none;
+            padding: 0;
+        }
+    }
